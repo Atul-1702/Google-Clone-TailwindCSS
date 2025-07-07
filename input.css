@@ -1,1 +1,8 @@
+@config './tailwind.config.js';
 @import "tailwindcss";
+
+@layer components {
+  .link-underline-on-hover {
+    @apply relative hover:before:w-full before:content-[''] before:w-0 before:h-[1.8px] before:bg-gray-600 before:absolute before:bottom-[1px] before:left-0 before:transition-all before:duration-700;
+  }
+}
