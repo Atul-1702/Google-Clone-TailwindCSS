@@ -27,7 +27,7 @@ A pixel-perfect clone of Google's homepage built using **Tailwind CSS v4**. This
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/google-clone-ui.git
+git clone https://github.com/Atul-1702/Google-Clone-TailwindCSS.git
 cd google-clone-tailwind-css
 npm install tailwindcss @tailwindcss/cli
 npx @tailwindcss/cli -i ./input.css -o ./output.css --watch

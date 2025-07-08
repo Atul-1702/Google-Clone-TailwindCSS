@@ -7,8 +7,8 @@
   <link href="./output.css" rel="stylesheet" />
 </head>
 
-<body class="mt-5">
-  <div class="container">
+<body class="mt-5 font-custom-regular relative">
+  <div class="container min-h-screen height-breakpoint">
     <header id="google-ui-header-wrapper">
       <nav class="flex justify-between text-[16px] text-gray-950">
         <ul class="flex gap-x-4 items-center">
@@ -68,7 +68,7 @@
               fill="#4285F4"></path>
           </svg>
         </div>
-        <div class="w-xl relative">
+        <div class="md:w-xl relative sm:w-md w-5/6">
           <input
             class="w-full border-1 outline-0  [box-shadow:0_0_8px_0.3px_rgb(209,213,219)]   rounded-full py-3 px-10 border-gray-300 hover:[box-shadow:0_0_10px_2px_rgb(209,213,219)]"
             type="text" />
@@ -97,10 +97,11 @@
           <button class="common-button-style">I'm Felling Lucky</button>
         </div>
 
-        <div class="flex gap-x-2 mt-4 items-center">
+        <div
+          class="md:flex md:flex-row md:gap-x-2 mt-4 md:items-center flex flex-col gap-y-3 justify-center items-center">
           <span class="text-[15px]">Google offered in:</span>
-          <ul class="flex gap-1 text-violet-700 font-medium text-[14px] [&>*]:hover:underline">
-            <li><a href="#">हिन्दी</a></li>
+          <ul class="flex sm:gap-1 gap-[2.5px] text-violet-700 font-medium   text-[14px] [&>*]:hover:underline">
+            <li><a class="font-custom-bold" href="#">हिन्दी</a></li>
             <li><a href="#">বাংলা</a></li>
             <li><a href="#">తెలుగు</a></li>
             <li><a href="#">मराठी</a></li>
@@ -113,6 +114,24 @@
         </div>
       </section>
     </main>
+
+    <footer id="google-ui-footer-section-wrapper "
+      class="absolute w-full bottom-0 -left-0 bg-gray-100 opacity-80 py-6 font-medium ">
+      <h5 class="px-8">India</h5>
+      <hr class="my-4 bg-gray-300 h-[2.6px] border-0">
+      <nav class="px-8 md:flex md:flex-row md:justify-between flex flex-col gap-4 items-center justify-center">
+        <ul class="flex gap-x-4 sm:max-w-fit">
+          <li class="hover:underline"><a href="#">Advertising</a></li>
+          <li class="hover:underline"><a href="#">Business</a></li>
+          <li class="hover:underline"><a href="">How Search Works</a></li>
+        </ul>
+        <ul class="flex gap-x-4 sm:w-fit">
+          <li class="hover:underline"><a href="#">Privacy</a></li>
+          <li class="hover:underline"><a href="#">Terms</a></li>
+          <li class="hover:underline"><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </footer>
   </div>
 </body>
 

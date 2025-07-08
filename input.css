@@ -1,11 +1,41 @@
 @config './tailwind.config.js';
 @import "tailwindcss";
 
+@font-face {
+  font-family: "bold";
+  src: url("./fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "semibold";
+  src: url("./fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "regular";
+  src: url("./fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer components {
   .link-underline-on-hover {
     @apply relative hover:before:w-full before:content-[''] before:w-0 before:h-[1.8px] before:bg-gray-600 before:absolute before:bottom-[1px] before:left-0 before:transition-all before:duration-700;
   }
   .common-button-style {
     @apply bg-gray-100 text-gray-900 cursor-pointer border-2 border-white rounded-[8px] px-4 py-2 opacity-95 text-[16px] hover:border-[2px] hover:border-gray-100 hover:bg-gray-50;
+  }
+  .height-breakpoint {
+    @media (max-height: 620px) {
+      min-height: calc(100vh + 170px);
+      height: calc(100vh + 170px);
+      max-height: calc(100vh + 170px);
+      width: 100%;
+    }
   }
 }
